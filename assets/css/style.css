@@ -223,6 +223,11 @@ aside h2 {
   margin-top: 15px;
   text-align: end;
 }
+
+.newsletter {
+  color: black;
+}
+
 /* FOOTER */
 
 footer {
