@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Primi passi operativi per creare un modello di
+  pagina HTML per un post. Scopri come iniziare in modo facile."
+    />
+    <title>Sviluppo di una pagina web - Blog Epicode</title>
+    <link rel="stylesheet" href="assets/css/reset.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <header>
+      <div>
+        <img src="assets/img/logo.svg" alt="Logo di Epicode" />
+        <h1>EPICODE - IL BLOG DEI DEVELOPERS</h1>
+        <p>
+          <i class="fas fa-arrow-circle-right"></i>HOME<i
+            class="fas fa-arrow-circle-left"
+          ></i>
+        </p>
+        <p>
+          <i class="fas fa-arrow-circle-right"></i>ARTICOLI<i
+            class="fas fa-arrow-circle-left"
+          ></i>
+        </p>
+        <p>
+          <i class="fas fa-arrow-circle-right"></i>LAVORA CON NOI<i
+            class="fas fa-arrow-circle-left"
+          ></i>
+        </p>
+      </div>
+    </header>
+    <main>
+      <section>
+        <div>
+          <h2>Come creare un template per i post</h2>
+          <h4>
+            <i class="fas fa-pen-square"></i> di Mario Rossi -
+            <i class="fas fa-clock"></i> pubblicato il 25-10-2020
+          </h4>
+        </div>
+        <div>
+          <p>
+            La prima cosa da fare è suddividere in blocchi logici la pagina,
+            identificando <a href="#">le parti comuni</a> da applicare a tutte
+            le pagine
+          </p>
+          <p>Le varie aree saranno quindi suddivise in:</p>
+          <ul>
+            <li>
+              Contenuti di intestazione del tag <span>&lt;header&gt;</span>
+            </li>
+            <li>
+              Contenuti centrali variabili del tag <span>&lt;main&gt;</span>;
+              (corpo principale)
+            </li>
+            <li>
+              Contenuti di fine pagina comuni, da inserire nel tag
+              <span>&lt;footer&gt;</span>;
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Formattazione del codice</h3>
+        </div>
+        <div>
+          <p>
+            Il testo dell'articolo dovrà essere formattato per identificare
+            tutte le parti da <a href="#">selezionare con i CSS.</a> Perciò i
+            passi saranno:
+          </p>
+          <ol>
+            <li>
+              Progettare il markup assegnando ad ogni specifico testo il tag
+              appropriato
+            </li>
+            <li>
+              Scrivere l'HTML dai tag esterni a quelli interni e dall'alto verso
+              il basso
+            </li>
+            <li>Applicare gli stili CSS</li>
+          </ol>
+        </div>
+        <div>
+          <p>
+            L'applicazione di stili CSS è cresciuta negli anni fino a
+            raggiungere la diffusione pressoché totale.
+          </p>
+          <table>
+            <caption>
+              Diffusione dei CSS
+            </caption>
+            <thead>
+              <tr>
+                <th class="anno">Anno</th>
+                <th>% di utilizzo</th>
+                <th>Supporto browser</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2000</td>
+                <td>20%</td>
+                <td>17%</td>
+              </tr>
+              <tr class="second">
+                <td>2002</td>
+                <td>35%</td>
+                <td>22%</td>
+              </tr>
+              <tr>
+                <td>2004</td>
+                <td>45%</td>
+                <td>42%</td>
+              </tr>
+              <tr class="fourth">
+                <td>2008</td>
+                <td>88%</td>
+                <td>51%</td>
+              </tr>
+              <tr>
+                <td>2012</td>
+                <td>100%</td>
+                <td>76%</td>
+              </tr>
+            </tbody>
+            <tfoot></tfoot>
+          </table>
+        </div>
+        <div>
+          <p>
+            Un test di validazione potrà essere fatto tramite il
+            <a href="#">tool online</a> dedicato allo scopo. Una volta
+            ottimizzato il tutto, avremo raggiunto il nostro obiettivo ed essere
+            stati dei veri developers come loro:
+          </p>
+        </div>
+        <div class="frame">
+          <iframe
+            width="auto"
+            height="auto"
+            src="https://www.youtube.com/embed/pnNCvnlmJXg?si=u6QTjc5WAD0mDPaE"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </section>
+      <section>
+        <form onsubmit="alert('Registrazione effettuata')">
+          <h2>NOVITÀ!</h2>
+          <h4 class="newsletter">
+            Vuoi rimanere aggiornato su altre novità del blog? Iscriviti alla
+            nostra newsletter:
+          </h4>
+          <label for="newsletter"></label>
+          <input type="email" id="newsletter" placeholder="inserisci email" />
+          <button type="submit">Iscriviti!</button>
+        </form>
+      </section>
+      <aside>
+        <h2>ARTICOLI CORRELATI</h2>
+        <div class="articles">
+          <img
+            src="https://epicode.com/wp-content/uploads/2022/08/html-e-css-1.jpg"
+            alt="Immagine codice"
+          />
+          <a href="#">
+            <h4>Validare il codice HTML</h4>
+          </a>
+          <p><i class="fas fa-tag"></i>Categoria: develop</p>
+          <p class="data"><i class="fas fa-calendar-alt"></i>Data: 18-9-2020</p>
+        </div>
+        <div class="articles">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/HTML.svg/1200px-HTML.svg.png"
+            alt="Immagine codice"
+          />
+          <a href="#">
+            <h4>Correggere la sintassi</h4>
+          </a>
+          <p><i class="fas fa-tag"></i>Categoria: develop</p>
+          <p class="data"><i class="fas fa-calendar-alt"></i>Data: 16-9-2020</p>
+        </div>
+        <div class="articles">
+          <img
+            src="https://fossbytes.com/wp-content/uploads/2016/08/bytes-kilobyte-megabyte-representation.jpg"
+            alt="Immagine codice"
+          />
+          <a href="#">
+            <h4>Meno Kb nella pagina</h4>
+          </a>
+          <p><i class="fas fa-tag"></i>Categoria: ottimizzazione</p>
+          <p class="data"><i class="fas fa-calendar-alt"></i>Data: 30-9-2020</p>
+        </div>
+      </aside>
+    </main>
+    <footer>
+      <small> Blog Epicode 2023 <i class="far fa-copyright"></i> </small>
+
+      <small>
+        Testata online di Mario Rossi, registrata con prot. n.213/2018 - via
+        Luigi Einaudi 2 - Milano. P.IVA 00112233.
+        <a href="#">info@epicode.school</a>
+      </small>
+    </footer>
+  </body>
+</html>
